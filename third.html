@@ -1,0 +1,126 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8"/>
+<title>mywords</title>
+<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"> 
+$(function(){
+	$(".main-li").hover(function(){
+		$(this).children(".sub-menu").show().prev("a").css({"color":"#000","text-decoration":"underline"});
+	},function(){
+		$(this).children(".sub-menu").hide().prev("a").css({"color":"#fff","text-decoration":"none"});
+	});
+	$(".sub-menu .main-li2").hover(function(){
+		$(this).children(".li2-a").css({"background-color":"#981C14","color":"#fff","text-decoration":"underline"});
+		$(this).children(".sub-menu-two").show();
+	},function(){
+		$(this).children(".li2-a").css({"background-color":"#7C2418","color":"#FF6633","text-decoration":"none"});
+		$(this).children(".sub-menu-two").hide();
+	});
+	
+});
+</script>
+<style>
+.menu{
+	height:56px;
+	float:left;
+	padding-left:60px;}
+.menu ul{
+	width:800px;
+	float:left;
+	}
+.menu li{
+	padding-top:0px;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+	width:160px;
+	float:left;}
+
+.main-menu{
+width:100%;
+}
+.main-menu .main-li{
+float:left; padding-top:20px; height:32px; line-height:32px; position:relative; z-index:1;
+}
+.main-menu .main-li a{
+display:block; font-weight:bold;
+}
+.main-menu .main-li .li-a{
+float:left;
+}
+.main-menu .main-li .li-a{
+width:75px;
+}
+.main-menu .main-li .sub-menu{
+position:absolute; top:50px; display:none; z-index:2; left:-11px; width:89px; text-align:center; background-color:#999999;
+}
+.main-menu .main-li .sub-menu-two{
+position:absolute; top:0px; display:none; z-index:3; left:89px;text-align:center;
+}
+.sub-menu-two a{
+width:80px; background-color:#981C14; float:none;
+}
+.sub-menu .li2-a{
+background-color:#7C2418; float:none;width:89px;
+}
+.sub-menu a:hover{
+background-color:#981C14;
+}
+.mail-li a:hover{ color:#000}
+.menu a,.menu a:link{ color:#fff; text-decoration:none}
+
+.main-body.words{
+    padding-top:0px;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+	width:160px;
+	float:left;}
+</style>
+</head>
+<body style="height:1000px;width:800px;background-color:#fcc;margin:0px auto;">
+
+  <div  class="main">
+
+	  <div class="menu">
+	  
+	  <ul class="main-menu">
+	  <li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+	  <li class="main-li"><a href="./second.html">鱼和洋流</a> </li><li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+	  <li class="main-li"><a  href="./index.html">酒和酒杯</a> 
+	   <ul class="sub-menu">
+					<li class="main-li2"><a class="li2-a" href="/">我和逗逼们</a></li>
+					<li class="main-li2"><a class="li2-a" href="/">我和你们</a></li>
+	  </ul>
+	</li>
+	<li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+	  <li class="main-li"><a  href="./fourth.html">我和我的日光城</a></li>
+	 <li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+	  <li class="main-li"><a href="./fifth.html">有梦为马，随处可栖</a></li> 
+	  </ul>
+	  </div>
+	 <div style="float:left;margin:0 auto;">
+	 <div class="main-body"style="float:left;">
+	 <img src="./img/37.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+	<div class="words"style="width:500px;float:left;margin-top:20px;"></div>
+	 </div>
+	 <div class="main-body"style="float:left;margin-left:280px;">
+	 <img src="./img/35.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+	<div class="words"style="width:500px;float:left;margin-top:20px;margin-left:20px;"></div>
+	 </div>
+	 <div class="main-body"style="float:left;margin-top:180px;">
+	 <img src="./img/34.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+	  <div class="words"style="width:950px;margin-top:10px;margin-bottom:20px;">
+五年是什么样子的，有很棒的梦想，有过熬夜奋斗很累但很有成就感的样子，有夜深人静的时候音乐加白开刷题的感觉，有喜欢的书，有喜欢的歌手，有喜欢的音乐，喜欢的电影，写一手好看的字，有主见，有担当，有失去，会想起但不会念着的人，也有互相嫌弃但不会走的朋友，有喜欢的，每天都可以灿烂，每天都不要后悔。
+生活不止眼前的苟且，还有诗和远方！</div>
+	 </div>
+	 <div class="main-body"style="float:left;margin-left:280px;margin-top:180px;">
+	 <img src="./img/41.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+	 </div>
+	<EMBED src="./music/熙梓-【且听风吟】致我的闺蜜.mp3";autostart="true" loop="true" width="0" height="0" volume="100" starttime="00:00"> 
+	 </div>
+ </div>
+</body>
+</html>

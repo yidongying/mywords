@@ -1,0 +1,120 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type"content="text/html;charset=utf-8"/>
+<title>mywords</title>
+<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"> 
+$(function(){
+	$(".main-li").hover(function(){
+		$(this).children(".sub-menu").show().prev("a").css({"color":"#000","text-decoration":"underline"});
+	},function(){
+		$(this).children(".sub-menu").hide().prev("a").css({"color":"#fff","text-decoration":"none"});
+	});
+	$(".sub-menu .main-li2").hover(function(){
+		$(this).children(".li2-a").css({"background-color":"#981C14","color":"#fff","text-decoration":"underline"});
+		$(this).children(".sub-menu-two").show();
+	},function(){
+		$(this).children(".li2-a").css({"background-color":"#7C2418","color":"#FF6633","text-decoration":"none"});
+		$(this).children(".sub-menu-two").hide();
+	});
+	
+});
+</script>
+<style>
+.menu{
+	height:56px;
+	float:left;
+	padding-left:60px;}
+.menu ul{
+	width:800px;
+	float:left;
+	}
+.menu li{
+	padding-top:0px;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+	width:160px;
+	float:left;}
+
+.main-menu{
+width:100%;
+
+}
+.main-menu .main-li{
+float:left; padding-top:20px; height:32px; line-height:32px; position:relative; z-index:1;
+}
+.main-menu .main-li a{
+display:block; font-weight:bold;
+}
+.main-menu .main-li .li-a{
+float:left;
+}
+.main-menu .main-li .li-a{
+width:75px;
+}
+.main-menu .main-li .sub-menu{
+position:absolute; top:50px; display:none; z-index:2; left:-11px; width:89px; text-align:center; background-color:#999999;
+}
+.main-menu .main-li .sub-menu-two{
+position:absolute; top:0px; display:none; z-index:3; left:89px;text-align:center;
+}
+.sub-menu-two a{
+width:80px; background-color:#981C14; float:none;
+}
+.sub-menu .li2-a{
+background-color:#7C2418; float:none;width:89px;
+}
+.sub-menu a:hover{
+background-color:#981C14;
+}
+.mail-li a:hover{ color:#000}
+.menu a,.menu a:link{ color:#fff; text-decoration:none}
+
+.main-body.words{
+    padding-top:0px;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+	width:160px;
+	float:left;}
+</style>
+</head>
+<body style="height:1000px;width:800px;background-color:#fcc;margin:0px auto;">
+
+  <div  class="main">
+  <div class="head">
+  <div class="menu">
+  <ul class="main-menu">
+  <li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+  <li class="main-li"><a href="./second.html">鱼和洋流</a> </li><li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+  <li class="main-li"><a  href="./third.html">酒和酒杯</a> 
+   <ul class="sub-menu">
+				<li class="main-li2"><a class="li2-a" href="/">我和逗逼们</a></li>
+				<li class="main-li2"><a class="li2-a" href="/">我和你们</a></li>
+  </ul>
+</li>
+<li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+  <li class="main-li"><a  href="./fourth.html">我和我的日光城</a></li>
+ <li style="width:15px; padding-top:0px;"><img src="img/topxian.jpg"></li>
+  <li class="main-li"><a href="./fifth.html">有梦为马，随处可栖</a></li> 
+  </ul>
+  </div>
+ </div>
+ <div style="float:left;margin:0 auto;">
+ <div class="main-body"style="float:left;">
+ <img src="./img/8.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+<div class="words"style="width:500px;float:left;margin-top:20px;"><span>我们都是一群倔强的孩子，在阳光下肆无忌惮的笑，却在月光下歇斯底里的哭。所谓的好朋友，不就是像我们一样，畅谈心事，彼此关心，彼此照顾，
+时而哈哈大笑，时而争得面红耳赤，时而冷语相对，时而又嘻嘻哈哈乐个不停。
+我怀念那些时候，未来遥远的没有形状，我们单纯的没有烦恼.</span></div>
+ </div>
+ <div class="main-body"style="float:left;margin-left:280px;">
+ <img src="./img/11.jpg"style="width:500px;margin-left:0px;margin-top:30px;"/>
+<div class="words"style="width:500px;float:left;margin-top:20px;margin-left:20px;"><span>没有什么过不去，有的只是回不去.</span></div>
+ </div>
+<EMBED src="./music/儿歌 - 生日快乐.mp3";autostart="true" loop="true" width="0" height="0" volume="100" starttime="00:00"> 
+ </div>
+</div>
+</body>
+</html>
